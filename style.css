@@ -1,20 +1,18 @@
-<style>
 body {
   background-color: orange;
 }
 h1 {
   color: yellow
   font-family: verdana
-  font-size: 200%
+  font-size: 300%
 }
 h2,h3 {
   color: blue;
   font-family: verdana;
-  font-size: 150%;
+  font-size: 200%;
 }
 p {
   color: purple;
   font-family: Trebuchet MS;
-  font-size: 80%;
+  font-size: 150%;
 }
-    </style>
