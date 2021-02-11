@@ -1,18 +1,18 @@
-body {
-  background-color: orange;
-}
-h1 {
-  color: yellow
-  font-family: verdana
-  font-size: 300%
-}
-h2,h3 {
-  color: blue;
+body{
+  background-color: #FEFF33;
   font-family: verdana;
-  font-size: 200%;
+  font-size: 16px;
+  margin: auto;
+  max-width: 900px;
 }
-p {
-  color: purple;
-  font-family: Trebuchet MS;
-  font-size: 150%;
+h2, h3{
+  color: #33FEFF;
+  padding: 10px;
+}
+p, ol, ul{
+  color: #33FF9A;
+}
+h1{
+  color: #3398FF;
+  padding 30px
 }
