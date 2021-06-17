@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      makePolyTable
+    </title>
+  </head>
+  <body>
+    <h1>
+      My Polynomial Code
+    </h1>
+    <p>  
+      def makePolyTable(start,end):  
+    </p>
+    <p>
+        table = "<table>\n<tr><th>x</th><th>y= 5x^3+7x^2+16x+95</th></tr>\n"
+    </p>
+    <p>
+        right = "<tr><td>"
+    </p>
+    <p>
+        mid = "</td><td>"
+    </p>
+    <p>    
+        left = "</td></tr>\n"
+    </p>
+    <p>
+        while start <= end:
+    </p>
+          result = (5 * (start**3)) + (7 * (start**2)) + (16 * start) + 95
+    <p>
+          table += right + str(start) + mid + str(result) + left
+    </p>
+    <p>
+          start += 1
+    </p>
+    <p>
+        table += "</table>"
+    </p>
+    <p>
+        return table
+    </p>
+    <p>
+      print(makePolyTable(-20,50))
+    </p>
+  </body>
+</html>
+
