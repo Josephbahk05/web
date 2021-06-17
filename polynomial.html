@@ -1,3 +1,15 @@
+def makePolyTable(start,end):
+    table = "<table>\n<tr><th>x</th><th>y= 5x^3+7x^2+16x+95</th></tr>\n"
+    right = "<tr><td>"
+    mid = "</td><td>"
+    left = "</td></tr>\n"
+    while start <= end:
+        result = (5 * (start**3)) + (7 * (start**2)) + (16 * start) + 95
+        table += right + str(start) + mid + str(result) + left
+        start += 1
+    table += "</table>"
+    return table
+                      
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,22 +24,10 @@
       I chose this as my favorite polynomial because it has some of my favorite numbers. I chose 5, to represent the year I was born, which is 2005. I chose 7, to represent my lucky number and my love for the game Mario Kart 7, which was one of the first legit games I've ever played. I chose 16, to show the year that I would turn this year or my next birthday. Lastly I chose 95, to represent my love for Cars and the movie which was my childhood. Lightning McQueen. Kachow! Here's my beautiful table!
     </p>
     <p>
-      print(makePolyTable(-20,50))
+      makePolyTable(-20,50)
     </p>
   </body>
 </html>
     
   
-def makePolyTable(start,end):
-    table = "<table>\n<tr><th>x</th><th>y= 5x^3+7x^2+16x+95</th></tr>\n"
-    right = "<tr><td>"
-    mid = "</td><td>"
-    left = "</td></tr>\n"
-    while start <= end:
-        result = (5 * (start**3)) + (7 * (start**2)) + (16 * start) + 95
-        table += right + str(start) + mid + str(result) + left
-        start += 1
-    table += "</table>"
-    return table
 
-print(makePolyTable(-20,50))
